@@ -21,7 +21,7 @@
             </span>    
         </a>
 
-        <a href="/admin/registrados" class="dashboard__enlace <?php echo pagina_actual('/registrados') ? 'dashboard__enlace--actual' : ''; ?> ">
+        <!-- <a href="/admin/registrados" class="dashboard__enlace <?php echo pagina_actual('/registrados') ? 'dashboard__enlace--actual' : ''; ?> ">
             <i class="fa-solid fa-users dashboard__icono"></i>
             <span class="dashboard__menu-texto">
                 Registrados
@@ -32,6 +32,6 @@
             <span class="dashboard__menu-texto">
                 Regalos
             </span>    
-        </a>
+        </a> -->
     </nav>
 </aside>
