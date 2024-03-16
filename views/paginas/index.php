@@ -33,16 +33,13 @@
     <div class="speakers__grid">
         <?php foreach($ponentes as $ponente) { ?>
             <div <?php aos_animacion(); ?> class="speaker">
-            <h4 class="speaker__nombre">
-                        <?php echo $ponente->nombre; ?>
-                    </h4>
-                <!-- <picture>
+                <picture>
                     <source srcset="img/speakers/<?php echo $ponente->imagen; ?>.webp" type="image/webp">
                     <source srcset="img/speakers/<?php echo $ponente->imagen; ?>.png" type="image/png">
                     <img class="speaker__imagen" loading="lazy" width="200" height="300" src="img/speakers/<?php echo $ponente->imagen; ?>.png" alt="Imagen Ponente">
-                </picture> -->
+                </picture>
 
-                <!-- <div class="speaker__informacion">
+                <div class="speaker__informacion">
                     <h4 class="speaker__nombre">
                         <?php echo $ponente->nombre; ?>
                     </h4>
@@ -105,14 +102,12 @@
                             <li class="speaker__skill"><?php echo $tag; ?></li>
                         <?php } ?>
                     </ul>
-                </div> -->
+                </div>
             </div>
         <?php } ?>
     </div>
 </section>
-
-<div id="mapa" class="mapa"></div>
-
+<!-- 
 <section class="boletos">
     <h2 class="boletos__heading">Boletos & Precios</h2>
     <p class="boletos__descripcion">Precios para DevWebCamp</p>
@@ -140,4 +135,4 @@
     <div class="boleto__enlace-contenedor">
         <a href="/paquetes" class="boleto__enlace">Ver Paquetes</a>
     </div>
-</section>
+</section> -->
