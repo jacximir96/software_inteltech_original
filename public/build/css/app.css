@@ -315,6 +315,7 @@ html {
 body {
   font-family: "Outfit", sans-serif;
   font-size: 1.8rem;
+  background-color: white;
 }
 
 a {
@@ -699,11 +700,6 @@ h3 {
 .speaker__nombre {
   font-weight: 900;
   font-size: 2.6rem;
-  margin: 2rem 0;
-}
-.speaker__description {
-  /* font-weight: 900; */
-  font-size: 2rem;
   margin: 2rem 0;
 }
 .speaker:nth-child(4n+1) {
@@ -1230,7 +1226,7 @@ h3 {
 }
 
 .barra {
-  background-color: #007df4;
+  background-color: #f9f9f9;
 }
 .barra__contenido {
   width: min(95%, 140rem);
@@ -1269,7 +1265,7 @@ h3 {
   }
 }
 .navegacion__enlace {
-  color: #FFFFFF;
+  color: black;
   font-size: 2rem;
   padding: 2rem;
   font-weight: 900;
@@ -1277,7 +1273,7 @@ h3 {
   text-align: center;
 }
 .navegacion__enlace--actual, .navegacion__enlace:hover {
-  background-color: #FFFFFF;
+  background-color: #f9f9f9;
   color: #007df4;
 }
 
