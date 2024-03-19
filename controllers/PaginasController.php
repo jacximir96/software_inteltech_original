@@ -57,15 +57,19 @@ class PaginasController {
     }
     public static function evento(Router $router) {
 
+       
         $router->render('paginas/devwebcamp', [
-            'titulo' => 'Sobre Inteltech Perú S.A.C.'
+            'titulo' => 'Sobre Inteltech Perú S.A.C.',
+           
         ]);
     }
     
     public static function paquetes(Router $router) {
 
+        $ponentes = Ponente::all();
         $router->render('paginas/paquetes', [
-            'titulo' => 'Paquetes DevWebCamp'
+            'titulo' => 'Nuestros Proyectos',
+            'ponentes' => $ponentes
         ]);
     }
 

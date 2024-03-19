@@ -1,41 +1,81 @@
 <main class="paquetes">
     <h2 class="paquetes__heading"><?php echo $titulo ?></h2>
-    <p class="paquetes__descripcion">Compara los paquetes de DevWebCamp</p>
+    <!-- <p class="paquetes__descripcion">Compara los paquetes de DevWebCamp</p> -->
 
-    <div class="paquetes__grid">
-        <div class="paquete">
-            <h3 class="paquete__nombre">Pase Gratis</h3>
-            <ul class="paquete__lista">
-                <li class="paquete__elemento">Acceso Virtual a DevWebCamp</li>
-            </ul>
+    <div class="speakers__grid">
+        <?php foreach($ponentes as $ponente) { ?>
+            <div <?php aos_animacion(); ?> class="speaker">
+                <picture>
+                    <source srcset="img/speakers/<?php echo $ponente->imagen; ?>.webp" type="image/webp">
+                    <source srcset="img/speakers/<?php echo $ponente->imagen; ?>.png" type="image/png">
+                    <img class="speaker__imagen" loading="lazy" width="200" height="300" src="img/speakers/<?php echo $ponente->imagen; ?>.png" alt="Imagen Ponente">
+                </picture>
 
-            <p class="paquete__precio">$0</p>
-        </div>
+                <div class="speaker__informacion">
+                    <h4 class="speaker__nombre">
+                        <?php echo $ponente->nombre; ?>
+                    </h4>
 
-        <div class="paquete">
-            <h3 class="paquete__nombre">Pase Presencial</h3>
-            <ul class="paquete__lista">
-                <li class="paquete__elemento">Acceso Presencial a DevWebCamp</li>
-                <li class="paquete__elemento">Pase por 2 días</li>
-                <li class="paquete__elemento">Acceso a talleres y conferencias</li>
-                <li class="paquete__elemento">Acceso a las grabaciones</li>
-                <li class="paquete__elemento">Camisa del Evento</li>
-                <li class="paquete__elemento">Comida y Bebida</li>
-            </ul>
+                    <h5 class="speaker__description">
+                        <?php echo $ponente->apellido; ?>
+                    </h5>
 
-            <p class="paquete__precio">$199</p>
-        </div>
+                    <p class="speaker__ubicacion">
+                        <?php echo $ponente->ciudad . ', ' . $ponente->pais; ?>
+                    </p>
 
-        <div class="paquete">
-            <h3 class="paquete__nombre">Pase Virtual</h3>
-            <ul class="paquete__lista">
-                <li class="paquete__elemento">Acceso Virtual a DevWebCamp</li>
-                <li class="paquete__elemento">Pase por 2 días</li>
-                <li class="paquete__elemento">Acceso a talleres y conferencias</li>
-                <li class="paquete__elemento">Acceso a las grabaciones</li>
-            </ul>
+                    <nav class="speaker-sociales">
+                        <?php
+                            $redes =  json_decode( $ponente->redes );
+                        ?>
+                        
+                        <?php if(!empty($redes->facebook)) { ?>
+                            <a class="speaker-sociales__enlace" rel="noopener noreferrer" target="_blank" href="<?php echo $redes->facebook; ?>">
+                                <span class="speaker-sociales__ocultar">Facebook</span>
+                            </a> 
+                        <?php } ?>
 
-            <p class="paquete__precio">$49</p>
-        </div>
+                        <?php if(!empty($redes->twitter)) { ?>
+                            <a class="speaker-sociales__enlace" rel="noopener noreferrer" target="_blank" href="<?php echo $redes->twitter; ?>">
+                                <span class="speaker-sociales__ocultar">Twitter</span>
+                            </a> 
+                        <?php } ?> 
+
+                        <?php if(!empty($redes->youtube)) { ?>
+                            <a class="speaker-sociales__enlace" rel="noopener noreferrer" target="_blank" href="<?php echo $redes->youtube; ?>">
+                                <span class="speaker-sociales__ocultar">YouTube</span>
+                            </a> 
+                        <?php } ?> 
+
+                        <?php if(!empty($redes->instagram)) { ?>
+                            <a class="speaker-sociales__enlace" rel="noopener noreferrer" target="_blank" href="<?php echo $redes->instagram; ?>">
+                                <span class="speaker-sociales__ocultar">Instagram</span>
+                            </a> 
+                        <?php } ?> 
+
+                        <?php if(!empty($redes->tiktok)) { ?>
+                            <a class="speaker-sociales__enlace" rel="noopener noreferrer" target="_blank" href="<?php echo $redes->tiktok; ?>">
+                                <span class="speaker-sociales__ocultar">Tiktok</span>
+                            </a> 
+                        <?php } ?> 
+
+                        <?php if(!empty($redes->github)) { ?>
+                            <a class="speaker-sociales__enlace" rel="noopener noreferrer" target="_blank" href="<?php echo $redes->github; ?>">
+                                <span class="speaker-sociales__ocultar">Github</span>
+                            </a>
+                        <?php } ?> 
+                    </nav>
+
+                    <ul class="speaker__listado-skills">
+                        <?php 
+                            $tags = explode(',', $ponente->tags);
+                            foreach($tags as $tag) { 
+                        ?>
+                            <li class="speaker__skill"><?php echo $tag; ?></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </div>
+        <?php } ?>
     </div>
 </main>
