@@ -30,7 +30,7 @@
 <div class="barra">
     <div class="barra__contenido">
         <a href="/">
-            <img src="/build/img/LOGO_ITP-SVG.svg" type="image/svg" style="width: 300px; height: 50px;">    
+            <img src="/build/img/LOGO_ITP-SVG.svg" type="image/svg" style="width: 250px; padding: 50px;">    
         </a>
         <nav class="navegacion">
             <a href="/devwebcamp" class="navegacion__enlace <?php echo pagina_actual('/devwebcamp') ? 'navegacion__enlace--actual' : ''; ?>">Nosotros</a>
