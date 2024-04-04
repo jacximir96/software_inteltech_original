@@ -33,10 +33,10 @@
             <img src="/build/img/LOGO_ITP-SVG.svg" type="image/svg" style="width: 250px; padding: 50px;">    
         </a>
         <nav class="navegacion">
-            <a href="/devwebcamp" class="navegacion__enlace <?php echo pagina_actual('/devwebcamp') ? 'navegacion__enlace--actual' : ''; ?>">Nosotros</a>
-            <a href="/paquetes" class="navegacion__enlace <?php echo pagina_actual('/paquetes') ? 'navegacion__enlace--actual' : ''; ?>">Proyectos</a>
-            <a href="/workshops-conferencias" class="navegacion__enlace <?php echo pagina_actual('/workshops-conferencias') ? 'navegacion__enlace--actual' : ''; ?>">Servicios</a>
-            <a href="/registro" class="navegacion__enlace <?php echo pagina_actual('/registro') ? 'navegacion__enlace--actual' : ''; ?>">Contactanos</a>
+            <a href="/devwebcamp"  style="text-decoration:none" class="navegacion__enlace <?php echo pagina_actual('/devwebcamp') ? 'navegacion__enlace--actual' : ''; ?>">Nosotros</a>
+            <a href="/paquetes" style="text-decoration:none" class="navegacion__enlace <?php echo pagina_actual('/paquetes') ? 'navegacion__enlace--actual' : ''; ?>">Proyectos</a>
+            <a href="/workshops-conferencias" style="text-decoration:none" class="navegacion__enlace <?php echo pagina_actual('/workshops-conferencias') ? 'navegacion__enlace--actual' : ''; ?>">Servicios</a>
+            <a href="/registro" style="text-decoration:none" class="navegacion__enlace <?php echo pagina_actual('/registro') ? 'navegacion__enlace--actual' : ''; ?>">Contactanos</a>
         </nav>
     </div>
 </div>
