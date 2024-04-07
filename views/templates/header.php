@@ -1,3 +1,46 @@
+<style>
+    .header{
+        width: 100%;
+        height: 60vh;
+        animation: animate 16s infinite;
+        background-size: cover;
+
+    }
+    .outer{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 60vh;
+    }
+    @keyframes animate{
+        0%,100%{
+            background-image: url(../build/img/prueba.jpg);
+        }
+        25%{
+            background-image: url(../build/img/1.jpg);
+        }
+        50%{
+            background-image: url(../build/img/2.jpg);
+        }
+        75%{
+            background-image: url(../build/img/3.jpg);
+        }
+    }
+    @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px white;
+            }
+            100% {
+                color: #1d4264;
+                text-shadow: 0 0 20px #1d4264;
+            }
+        }
+
+</style>
+    <link rel="preload" href="../build/img/prueba.jpg" as="image">
+    <link rel="preload" href="../build/img/1.jpg" as="image">
+    <link rel="preload" href="../build/img/2.jpg" as="image">
+    <link rel="preload" href="../build/img/3.jpg" as="image">
 <header class="header">
     <div class="header__contenedor">
         <nav class="header__navegacion">
@@ -9,21 +52,18 @@
                 </form>
             <?php } else { ?>
                 <!-- <a href="/registro" class="header__enlace">Registro</a> -->
-                <a href="/login" class="header__enlace">Iniciar Sesión</a>
+                <a href="/login" class="header__enlace" style="color: white;">Iniciar Sesión</a>
             <?php } ?>
         </nav>
 
         <div class="header__contenido">
+        <div class="outer">
+            </div>
             <a href="/">
-                <h1 class="header__logo">
+                <h1 class="header__logo" style="color: white;animation: glow 2s ease-in-out infinite alternate;">
                     Inteltech Perú
                 </h1>
             </a>
-
-            <!-- <p class="header__texto">Octubre 5-6 - 2023</p> -->
-            <!-- <p class="header__texto header__texto--modalidad">En Línea - Presencial</p> -->
-
-            <!-- <a href="/registro" class="header__boton">Comprar Pase</a> -->
         </div>
     </div>
 </header>
