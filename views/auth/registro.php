@@ -30,12 +30,27 @@
         background-color: #f48424; /* Color de la línea */
 }
 
+@media(max-width:1000px){
+    .circulo{
+        margin-left: 190px;
+    }
+    .title{
+        text-align: center;
+    }
+    span{
+        text-align: center;
+    }
+    .line {
+       margin-left: 50px;
+    }
+}
+
 </style>
 <div class="container">
     <div class="row"> 
         <div class="col-md-6">
             
-            <h2 style="color:  #f48424;padding-top:50px ;">UBÍCANOS</h2>
+            <h2 class="title" style="color:  #f48424;padding-top:50px ;">UBÍCANOS</h2>
             <?php 
                 require_once __DIR__ . '/../templates/alertas.php';
             ?>
@@ -54,7 +69,7 @@
                     <div class="col-md-2 circulo">
                         <span class="text"><i class="fa-solid fa-phone"></i></span>
                     </div>
-                    <div class="col-md-6" style="padding-top: 10px; display: flex; flex-direction: column;">
+                    <div class="col-md-6 " style="padding-top: 10px; display: flex; flex-direction: column;">
                         <span style="margin-bottom: 10px;color: #1d4264 ;">Telefonos</span>
                         <span style="font-size: 15px;">955564403 / 933270708</span>
                     </div>
@@ -75,7 +90,7 @@
                 </div> 
         </div>  
         <div class="col-md-6">
-                <h2 style="color:#f48424;padding-top: 50px;">CONTACTANOS</h2>
+                <h2 class="title" style="color:#f48424;padding-top: 50px;">CONTACTANOS</h2>
                 <!-- <p class="auth__texto">Regístrate en DevWebcamp</p>  -->
 
                 <?php 
@@ -161,7 +176,7 @@
                     </div>
                     
 
-                    <input type="submit" class="formulario__submit" style="background-color:#1d4264;"  value="Crear Cuenta">
+                    <input type="submit" class="formulario__submit" style="background-color:#1d4264;"  value="Enviar Mensaje">
                 </form>
         </div>
     </div>     
