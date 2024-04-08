@@ -3,7 +3,7 @@
     <h2 class="paquetes__heading"><?php echo $titulo ?></h2>
     <!-- <p class="paquetes__descripcion">Compara los paquetes de DevWebCamp</p> -->
 
-    <div class="speakers__grid">
+    <div class="speakers__grid" style="margin-bottom: 100px;">
         <?php foreach($ponentes as $ponente) { ?>
             <div <?php aos_animacion(); ?> class="speaker">
                 <picture>

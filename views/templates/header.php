@@ -35,6 +35,16 @@
                 text-shadow: 0 0 20px #1d4264;
             }
         }
+.image{
+    width: 220px; 
+    padding: 50px;
+   
+}
+@media (max-width: 1024px){
+    .image {
+        margin-left: 110px;
+    }
+}
 
 </style>
     <link rel="preload" href="../build/img/prueba.jpg" as="image">
@@ -69,8 +79,8 @@
 </header>
 <div class="barra">
     <div class="barra__contenido">
-        <a href="/">
-            <img src="/build/img/LOGO_ITP-SVG.svg" type="image/svg" style="width: 250px; padding: 50px;">    
+        <a class="image" href="/">
+            <img  src="/build/img/LOGO_ITP-SVG.svg" type="image/svg" >    
         </a>
         <nav class="navegacion">
             <a href="/devwebcamp"  style="text-decoration:none" class="navegacion__enlace <?php echo pagina_actual('/devwebcamp') ? 'navegacion__enlace--actual' : ''; ?>">Nosotros</a>
