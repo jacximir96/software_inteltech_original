@@ -21,6 +21,7 @@
         
         color: white;
         font-size: 40px;
+        
     }
     .line {
         margin-top: 20px;

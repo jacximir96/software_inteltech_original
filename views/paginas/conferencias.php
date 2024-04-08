@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <main class="agenda">
     <h2 class="agenda__heading">Nuestros Servicios</h2>
     <p class="agenda__descripcion">Nuestro modelo de negocio brinda enfoque absoluto al cliente, contamos con experiencia comprobada en implementación y mantenimiento de las siguiente soluciones: <span style="color:#ED7F00;font-weight:900;">CABLEADO ESTRUCTURADO, DETECCIÓN Y ALARMA CONTRA INCENDIOS, VIDEOVIGILANCIA IP, CONTROL DE ACCESO E INSTRUSIÓN, TELEVISIÓN, GABINETES DE COMUNICACIONES</span></p>

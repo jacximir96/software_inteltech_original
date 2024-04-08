@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <main class="paquetes">
     <h2 class="paquetes__heading"><?php echo $titulo ?></h2>
     <!-- <p class="paquetes__descripcion">Compara los paquetes de DevWebCamp</p> -->
