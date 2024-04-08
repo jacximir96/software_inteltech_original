@@ -9,20 +9,6 @@
 
         <div class="eventos__listado slider swiper">
             <div class="swiper-wrapper">
-                <?php foreach($eventos['conferencias_v'] as $evento ) { ?>
-                    <?php include __DIR__ . '../../templates/evento.php'; ?>
-                <?php } ?>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
-
-    <div class="eventos eventos--workshops">
-        <h3 class="eventos__heading">Detección y alarma contra incendios</h3>
-
-        <div class="eventos__listado slider swiper">
-            <div class="swiper-wrapper">
                 <?php foreach($eventos['workshops_v'] as $evento ) { ?>
                     <?php include __DIR__ . '../../templates/evento.php'; ?>
                 <?php } ?>
@@ -31,19 +17,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
-    <div class="eventos">
-        <h3 class="eventos__heading">Detección y alarma contra incendios</h3>
 
-        <div class="eventos__listado slider swiper">
-            <div class="swiper-wrapper">
-                <?php foreach($eventos['workshops_v'] as $evento ) { ?>
-                    <?php include __DIR__ . '../../templates/evento.php'; ?>
-                <?php } ?>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </div>
     <div class="eventos eventos--workshops">
         <h3 class="eventos__heading">Detección y alarma contra incendios</h3>
 
