@@ -30,7 +30,7 @@
     <h2 class="speakers__heading">Nuestros Proyectos</h2>
     <p class="speakers__descripcion">Conoce a nuestros proyectos desarrollados con mucho esfuerzo y dedicación.</p>
 
-    <div class="speakers__grid">
+    <div class="speakers__grid" style="margin-bottom: 150px;">
         <?php foreach($ponentes as $ponente) { ?>
             <div <?php aos_animacion(); ?> class="speaker">
                 <picture>
